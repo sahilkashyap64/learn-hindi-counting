@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hindi Numbers 1–100: Patterns & Practice</title>
+  <style>
+    /* ===== Basic Reset & Typography ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.5;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* ===== Patterns/Explanation Section ===== */
+    .patterns {
+      background: #fff;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .patterns h2 {
+      margin-bottom: 1rem;
+    }
+    .patterns ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      list-style-type: disc;
+    }
+    .patterns code {
+      background: #f4f4f4;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    /* ===== Reference Table Section ===== */
+    .reference-table {
+      background: #fff;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-height: 300px; /* for scrolling if needed */
+      overflow-y: auto;
+    }
+    .reference-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .reference-table th,
+    .reference-table td {
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    .reference-table th {
+      background: #f0f0f0;
+    }
+
+    /* ===== Quiz Section ===== */
+    .quiz {
+      background: #fff;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .quiz h2 {
+      margin-bottom: 1rem;
+    }
+    .quiz-card {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+      border: 2px dashed #ccc;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+    .quiz-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .quiz-controls label {
+      font-weight: bold;
+    }
+    .quiz-controls input[type="text"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100px;
+    }
+    .quiz-controls button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background: #007BFF;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .quiz-controls button:hover {
+      background: #0056b3;
+    }
+    .quiz-result {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .score {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .quiz-controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Hindi Numbers 1–100: Patterns & Practice</h1>
+  <p>Learn the key patterns and rules for Hindi numbers, then test yourself with the quiz below.</p>
+
+  <!-- ========== PATTERNS / EXPLANATION SECTION ========== -->
+  <div class="patterns">
+    <h2>Patterns & Rules</h2>
+
+    <h3>1) 1 से 10: आधार (Base Numbers)</h3>
+    <p>These are the crucial foundations for Hindi counting.</p>
+    <ul>
+      <li>1 → एक</li>
+      <li>2 → दो</li>
+      <li>3 → तीन</li>
+      <li>4 → चार</li>
+      <li>5 → पाँच</li>
+      <li>6 → छः</li>
+      <li>7 → सात</li>
+      <li>8 → आठ</li>
+      <li>9 → नौ</li>
+      <li>10 → दस</li>
+    </ul>
+
+    <h3>2) 11 से 19: विशिष्ट (Unique Teens)</h3>
+    <p>These have characteristic endings like <em>-रह</em>, <em>-ह</em>, <em>-स</em>.</p>
+    <ul>
+      <li>11 → ग्यारह</li>
+      <li>12 → बारह</li>
+      <li>13 → तेरह</li>
+      <li>14 → चौदह</li>
+      <li>15 → पंद्रह</li>
+      <li>16 → सोलह</li>
+      <li>17 → सत्रह</li>
+      <li>18 → अट्ठारह</li>
+      <li>19 → उन्नीस</li>
+    </ul>
+    <p><strong>Tip:</strong> These don’t follow a simple “10 + digit” rule, so memorize individually.</p>
+
+    <h3>3) दशकों के मुख्य शब्द (Multiples of 10)</h3>
+    <p>Each multiple of 10 has a unique term:</p>
+    <ul>
+      <li>20 → बीस</li>
+      <li>30 → तीस</li>
+      <li>40 → चालीस</li>
+      <li>50 → पचास</li>
+      <li>60 → साठ</li>
+      <li>70 → सत्तर</li>
+      <li>80 → अस्सी</li>
+      <li>90 → नब्बे</li>
+    </ul>
+
+    <h3>4) 21 से 99: “दहाई + इकाई” (Combining Decade & Unit)</h3>
+    <p>
+      Most numbers from 21–99 are formed by combining the “decade base” 
+      (बीस, तीस, चालीस...) with a modified form of the digits (एक, दो, तीन...).
+      For example, <em>इक्कीस</em> is basically <code>इक + बीस</code>, 
+      <em>बाईस</em> = <code>बाय + बीस</code>, etc. 
+    </p>
+    <p>
+      Each decade has unique phonetic shifts. But the overall concept is 
+      <code>[DecadeWord] + [DigitSound]</code> → a blended word 
+      (e.g., <code>इक</code> + <code>तीस</code> = “इकतीस”).
+    </p>
+
+    <h3>5) 100 = सौ (and Beyond)</h3>
+    <p>
+      100 is <em>सौ</em>. Then 200 → <em>दो सौ</em>, 300 → <em>तीन सौ</em>, etc.
+    </p>
+  </div>
+
+  <!-- ========== REFERENCE TABLE SECTION ========== -->
+  <div class="reference-table">
+    <h2>Reference: 1 to 100 in Hindi</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Hindi</th>
+          <th>Number</th>
+          <th>Hindi</th>
+        </tr>
+      </thead>
+      <tbody id="numbersTableBody">
+        <!-- Will be populated via JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ========== QUIZ SECTION ========== -->
+  <div class="quiz">
+    <h2>Quiz: What's the Number?</h2>
+    <p>We'll show a random Hindi word (e.g., “पचहत्तर”) and you must type its number (e.g., 75).</p>
+    <div class="quiz-card" id="hindiWordCard">Loading...</div>
+    <div class="quiz-controls">
+      <label for="userAnswer">Your Answer:</label>
+      <input type="text" id="userAnswer" placeholder="e.g. 37" />
+      <button id="checkBtn">Check</button>
+      <button id="nextBtn">Next</button>
+    </div>
+    <div class="quiz-result" id="quizResult"></div>
+    <div class="score" id="scoreBoard">Score: 0</div>
+  </div>
+
+</div> <!-- /container -->
+
+<footer>
+  <p>Practice daily for the best retention. Happy Learning!</p>
+</footer>
+
+<script>
+  /********************************************************
+   * 1) DATA: Hindi numbers mapping
+   ********************************************************/
+  const hindiNumbers = [
+    { num: 1, word: "एक" },       { num: 2, word: "दो" },       { num: 3, word: "तीन" },
+    { num: 4, word: "चार" },      { num: 5, word: "पाँच" },     { num: 6, word: "छः" },
+    { num: 7, word: "सात" },      { num: 8, word: "आठ" },       { num: 9, word: "नौ" },
+    { num: 10, word: "दस" },      { num: 11, word: "ग्यारह" },  { num: 12, word: "बारह" },
+    { num: 13, word: "तेरह" },    { num: 14, word: "चौदह" },    { num: 15, word: "पंद्रह" },
+    { num: 16, word: "सोलह" },    { num: 17, word: "सत्रह" },   { num: 18, word: "अट्ठारह" },
+    { num: 19, word: "उन्नीस" },  { num: 20, word: "बीस" },     { num: 21, word: "इक्कीस" },
+    { num: 22, word: "बाईस" },    { num: 23, word: "तेईस" },    { num: 24, word: "चौबीस" },
+    { num: 25, word: "पच्चीस" },  { num: 26, word: "छब्बीस" },  { num: 27, word: "सत्ताईस" },
+    { num: 28, word: "अट्ठाईस" }, { num: 29, word: "उनतीस" },   { num: 30, word: "तीस" },
+    { num: 31, word: "इकतीस" },   { num: 32, word: "बत्तीस" },  { num: 33, word: "तैंतीस" },
+    { num: 34, word: "चौंतीस" },  { num: 35, word: "पैंतीस" },  { num: 36, word: "छत्तीस" },
+    { num: 37, word: "सैंतीस" },  { num: 38, word: "अड़तीस" },  { num: 39, word: "उनतालीस" },
+    { num: 40, word: "चालीस" },   { num: 41, word: "इकतालीस" }, { num: 42, word: "बयालीस" },
+    { num: 43, word: "तैंतालीस" },{ num: 44, word: "चौंतालीस" },{ num: 45, word: "पैंतालीस" },
+    { num: 46, word: "छियालीस" }, { num: 47, word: "सैंतालीस" },{ num: 48, word: "अड़तालीस" },
+    { num: 49, word: "उनचास" },   { num: 50, word: "पचास" },    { num: 51, word: "इक्याबन" },
+    { num: 52, word: "बावन" },    { num: 53, word: "तिरेपन" },  { num: 54, word: "चौवन" },
+    { num: 55, word: "पचपन" },    { num: 56, word: "छप्पन" },   { num: 57, word: "सत्तावन" },
+    { num: 58, word: "अट्ठावन" }, { num: 59, word: "उनसठ" },    { num: 60, word: "साठ" },
+    { num: 61, word: "इकसठ" },    { num: 62, word: "बासठ" },    { num: 63, word: "तिरसठ" },
+    { num: 64, word: "चौंसठ" },   { num: 65, word: "पैंसठ" },   { num: 66, word: "छियासठ" },
+    { num: 67, word: "सड़सठ" },   { num: 68, word: "अड़सठ" },   { num: 69, word: "उनहत्तर" },
+    { num: 70, word: "सत्तर" },   { num: 71, word: "इकहत्तर" }, { num: 72, word: "बहत्तर" },
+    { num: 73, word: "तिहत्तर" }, { num: 74, word: "चौहत्तर" }, { num: 75, word: "पचहत्तर" },
+    { num: 76, word: "छिहत्तर" }, { num: 77, word: "सतहत्तर" }, { num: 78, word: "अठहत्तर" },
+    { num: 79, word: "उनासी" },   { num: 80, word: "अस्सी" },    { num: 81, word: "इक्यासी" },
+    { num: 82, word: "बयासी" },   { num: 83, word: "तिरासी" },  { num: 84, word: "चौरासी" },
+    { num: 85, word: "पचासी" },   { num: 86, word: "छियासी" },  { num: 87, word: "सतासी" },
+    { num: 88, word: "अठासी" },   { num: 89, word: "नवासी" },    { num: 90, word: "नब्बे" },
+    { num: 91, word: "इक्यानबे" },{ num: 92, word: "बानवे" },    { num: 93, word: "तिरानवे" },
+    { num: 94, word: "चौरानवे" }, { num: 95, word: "पचानवे" },  { num: 96, word: "छियानवे" },
+    { num: 97, word: "सत्तानवे" },{ num: 98, word: "अट्ठानवे" }, { num: 99, word: "निन्यानवे" },
+    { num: 100, word: "सौ" }
+  ];
+
+  /********************************************************
+   * 2) Populate the reference table dynamically
+   ********************************************************/
+  const tableBody = document.getElementById("numbersTableBody");
+  for (let i = 0; i < hindiNumbers.length; i += 2) {
+    // Create a row with two pairs of (Number, Hindi) if possible
+    const row = document.createElement("tr");
+
+    // For item i
+    const cell1 = document.createElement("td");
+    const cell2 = document.createElement("td");
+    cell1.textContent = hindiNumbers[i].num;
+    cell2.textContent = hindiNumbers[i].word;
+
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+
+    // For item i+1 (if it exists)
+    if (hindiNumbers[i + 1]) {
+      const cell3 = document.createElement("td");
+      const cell4 = document.createElement("td");
+      cell3.textContent = hindiNumbers[i + 1].num;
+      cell4.textContent = hindiNumbers[i + 1].word;
+
+      row.appendChild(cell3);
+      row.appendChild(cell4);
+    } else {
+      // If we don't have an i+1 item, fill empty cells
+      const emptyCell3 = document.createElement("td");
+      const emptyCell4 = document.createElement("td");
+      row.appendChild(emptyCell3);
+      row.appendChild(emptyCell4);
+    }
+
+    tableBody.appendChild(row);
+  }
+
+  /********************************************************
+   * 3) Quiz functionality
+   ********************************************************/
+  let quizArray = [...hindiNumbers]; // copy of data
+  let currentIndex = 0;
+  let score = 0;
+
+  const hindiWordCard = document.getElementById("hindiWordCard");
+  const userAnswer = document.getElementById("userAnswer");
+  const quizResult = document.getElementById("quizResult");
+  const checkBtn = document.getElementById("checkBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const scoreBoard = document.getElementById("scoreBoard");
+
+  // Load a random question
+  function loadRandomQuestion() {
+    if (quizArray.length === 0) {
+      // If we've exhausted all, reset or show a message
+      quizArray = [...hindiNumbers];
+      score = 0; // optional reset
+    }
+    currentIndex = Math.floor(Math.random() * quizArray.length);
+    hindiWordCard.textContent = quizArray[currentIndex].word;
+    userAnswer.value = "";
+    quizResult.textContent = "";
+  }
+
+  // Check user's answer
+  function checkAnswer() {
+    const correctNumber = quizArray[currentIndex].num;
+    const userValue = parseInt(userAnswer.value);
+
+    if (!userAnswer.value) {
+      quizResult.style.color = "red";
+      quizResult.textContent = "Please enter a number.";
+      return;
+    }
+
+    if (userValue === correctNumber) {
+      quizResult.style.color = "green";
+      quizResult.textContent = "Correct!";
+      score++;
+      // Remove this item from quizArray so it won't repeat immediately
+      quizArray.splice(currentIndex, 1);
+    } else {
+      quizResult.style.color = "red";
+      quizResult.textContent = `Wrong! The correct answer is ${correctNumber}.`;
+    }
+    scoreBoard.textContent = `Score: ${score}`;
+  }
+
+  // Event Listeners
+  checkBtn.addEventListener("click", checkAnswer);
+  nextBtn.addEventListener("click", loadRandomQuestion);
+
+  // Initialize first question
+  loadRandomQuestion();
+</script>
+
+</body>
+</html>
